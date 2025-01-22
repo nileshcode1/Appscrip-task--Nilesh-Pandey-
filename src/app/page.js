@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Banner from "./components/below-banner/Banner";
-import Group from "./components/Group/Group";
+import Group from "./components/Drop/Group";
 import Filter from "./components/filter-logics/Filter";
 import Products from "./components/products/Products";
 import { ContextProvider } from "./components/Context";

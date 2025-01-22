@@ -11,7 +11,7 @@ const myFont = localFont({
 
 export default function RootLayout({
   children,
-  title = "Default Title",
+  title = "FakeShop: Explore Our Exclusive Products",
   description = "Default Description",
 }) {
   return (
