@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 0rem;
+
+  padding: 0.5rem 0;
+}
+
+.recommendedText {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #333;
+  margin: 0;
+}
+
+.totalitems {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+}
+
+.filterbtn {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.filterbtn span {
+  font-family: Adobe Caslon Pro;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  color: #888792;
+}
+
+.filterbtn:hover {
+  background-color: #cfcfcf;
+}
+
+.select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+.modalContainer {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0px 0px 7px 1px #a3aaaf33;
+  border: none;
+  border-radius: 1rem;
+}
+.dropdownItem {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdownWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdownButton {
+  display: flex;
+  align-items: center; /* Center-align the text and icon */
+  justify-content: space-between;
+  gap: 0.5rem; /* Gap between text and arrow icon */
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Adjust padding for a more compact area */
+  width: 100%; /* Ensure the clickable area spans the entire width */
+  text-align: left;
+}
+
+.buttonText {
+  flex-grow: 1; /* Allow the text to take up available space */
+  color: black;
+}
+
+.arrowIcon {
+  height: 16px;
+  width: 16px;
+}
+
+.dropdownButton:hover {
+  background-color: #f5f5f5; /* Optional: Highlight on hover */
+}
+
+.arrow_right {
+  transform: rotate(180deg);
+}
+
+.filterbtn_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .totalitems {
+    display: none;
+  }
+
+  .filterbtn {
+    display: none;
+  
+  }
+
+  .filterbtn_mobile {
+    display: block;
+    background: none;
+    border: none;
+    color: black !important;
+    font-size: inherit;
+    cursor: default; /* Makes it non-clickable */
+    margin-left: 40;
+    margin-bottom: 20;
+  }
+
+  .filterbtn_mobile:hover {
+    cursor: default; /* Ensures no click action */
+  }
+
+  .dropdown button {
+    font-size: 14px;
+    border-left: 1px solid #e5e5e5;
+  }
+}
